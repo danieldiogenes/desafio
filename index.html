@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=he, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio Front-end Alce Rocks</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -37,7 +37,22 @@
           </p>
         </div>
       </div>
-      <button class="popup-button">Botão que abre popup</button>
+      <button class="popup-button" onclick="openPopup()">
+        Botão que abre popup
+      </button>
     </main>
+
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span class="close-button" onclick="closePopup()">X</span>
+        <h2>Imagens API</h2>
+        <img id="randomImage" src="" alt="Imagem da API" />
+        <button class="update-button" onclick="updateImage()">
+          Botão atualizar
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
